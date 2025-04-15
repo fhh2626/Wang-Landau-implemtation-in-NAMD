@@ -133,8 +133,8 @@ if {[info exist st_weight] == 0} {
         }
     }
     if {$st_type == 2} {
-        if {[llength $st_weight] != [llength $st_lambdas]} {
-            puts "Error! The length of st_weight must equal to st_lambdas for a classical simulated solute scaling!"
+        if {[llength $st_weight] != [llength $st_factors]} {
+            puts "Error! The length of st_weight must equal to st_factors for a classical simulated solute scaling!"
             exit 1
         }
     }
